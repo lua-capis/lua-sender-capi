@@ -21,10 +21,19 @@ sender object. For further documentation see [sender_capi.h](./sender_capi.h).
      to the buffer, native C code can read the message from this buffer by invoking
      the *Sender C API*.
 
+### Invocations:
+
+   * [ljack] midi sender processor objects are sending midi messages that are given by a 
+     registered sender object to a JACK MIDI OUT port, see [ljack.new_midi_sender()] 
+     and [ljack/example04.lua].
+
 <!-- ---------------------------------------------------------------------------------------- -->
 
-[mtmsg]:                  https://github.com/osch/lua-mtmsg
+[mtmsg]:                     https://github.com/osch/lua-mtmsg
 
+[ljack]:                     https://github.com/osch/lua-ljack
+[ljack/example04.lua]:       https://github.com/osch/lua-ljack/blob/master/examples/example04.lua
+[ljack.new_midi_sender()]:   https://github.com/osch/lua-ljack/blob/master/doc/README.md#ljack_new_midi_sender
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
