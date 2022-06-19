@@ -23,9 +23,13 @@ sender object. For further documentation see [sender_capi.h](./sender_capi.h).
 
 ### Invocations:
 
-   * [ljack] midi sender processor objects are sending midi messages that are given by a 
-     registered sender object to a JACK MIDI OUT port, see [ljack.new_midi_sender()] 
+   * [auproc] MIDI sender processor objects are sending midi messages that are given by a 
+     registered sender object to an [auproc-capi] connector, see [auproc.new_midi_sender()] 
      and [ljack/example04.lua].
+
+   * [auproc] AUDIO sender processor objects are sending audio samples that are given by a 
+     registered sender object to an [auproc-capi] connector, see [auproc.new_audio_sender()] 
+     and [ljack/example08.lua].
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
@@ -33,7 +37,13 @@ sender object. For further documentation see [sender_capi.h](./sender_capi.h).
 
 [ljack]:                     https://github.com/osch/lua-ljack
 [ljack/example04.lua]:       https://github.com/osch/lua-ljack/blob/master/examples/example04.lua
-[ljack.new_midi_sender()]:   https://github.com/osch/lua-ljack/blob/master/doc/README.md#ljack_new_midi_sender
+[ljack/example08.lua]:       https://github.com/osch/lua-ljack/blob/master/examples/example08.lua
+
+[auproc]:                    https://github.com/osch/lua-auproc
+[auproc-capi]:               https://github.com/lua-capis/lua-auproc-capi
+[auproc.new_midi_sender()]:  https://github.com/osch/lua-auproc/blob/master/doc/README.md#auproc_new_midi_sender
+[auproc.new_audio_sender()]: https://github.com/osch/lua-auproc/blob/master/doc/README.md#auproc_new_audio_sender
+
 
 <!-- ---------------------------------------------------------------------------------------- -->
 
